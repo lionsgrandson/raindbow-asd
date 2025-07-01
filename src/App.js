@@ -1,6 +1,7 @@
 import "./App.css";
 import Icon from "./img/Logo_icon_noshadow.png";
 import sivanHeadShot from "./img/sivanHeadShot.png.png";
+import ContactSec from "./component/contactSec";
 function App() {
   return (
     <div>
@@ -33,6 +34,7 @@ function App() {
           <h2>מלאו פרטים בטופס ואחזור אליכם לשיחת היכרות</h2>
         </div>
       </section>
+      <ContactSec />
     </div>
   );
 }
