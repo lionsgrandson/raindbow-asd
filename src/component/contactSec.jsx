@@ -1,5 +1,5 @@
 import TextField from "@mui/material/TextField";
-
+import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 
 function ContactSec() {
@@ -15,6 +15,10 @@ function ContactSec() {
         <div>
           <a href="tel:+972546495902">054-649-5902</a>
           <FaPhoneAlt />
+        </div>
+        <div>
+          <a href="mail:LEVANONSKI@GMAIL.COM">levanonski@gmail.com</a>
+          <MdEmail />
         </div>
       </div>
     </section>
