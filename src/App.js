@@ -3,6 +3,7 @@ import Icon from "./img/Logo_icon_noshadow.png";
 import sivanHeadShot from "./img/sivanHeadShot.png.png";
 import ContactSec from "./component/contactSec";
 import QnaSec from "./component/qnaSec";
+import RecomendSec from "./component/recomendationSec";
 function App() {
   return (
     <div>
@@ -38,6 +39,7 @@ function App() {
       <ContactSec />
       <section>
         <QnaSec />
+        <RecomendSec />
       </section>
     </div>
   );

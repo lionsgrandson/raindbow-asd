@@ -1,0 +1,4 @@
+.recP {
+  display: flex;
+  flex-direction: row;
+}
