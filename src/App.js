@@ -4,6 +4,7 @@ import sivanHeadShot from "./img/sivanHeadShot.png.png";
 import ContactSec from "./component/contactSec";
 import QnaSec from "./component/qnaSec";
 import RecomendSec from "./component/recomendationSec";
+import Footer from "./component/footer";
 function App() {
   return (
     <div>
@@ -44,6 +45,7 @@ function App() {
       <button>
         <a href="#contact">לחצו כאן להשארת פרטים</a>
       </button>
+      <Footer />
     </div>
   );
 }
