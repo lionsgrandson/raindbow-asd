@@ -41,6 +41,9 @@ function App() {
         <QnaSec />
         <RecomendSec />
       </section>
+      <button>
+        <a href="#contact">לחצו כאן להשארת פרטים</a>
+      </button>
     </div>
   );
 }

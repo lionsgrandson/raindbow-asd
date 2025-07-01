@@ -3,7 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 function ContactSec() {
   return (
-    <section>
+    <section id="contact">
       <h2>יצירת קשר</h2>
       <div>
         <form method="POST" autocomplete="on">
