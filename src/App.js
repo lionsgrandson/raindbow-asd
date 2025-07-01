@@ -2,6 +2,7 @@ import "./App.css";
 import Icon from "./img/Logo_icon_noshadow.png";
 import sivanHeadShot from "./img/sivanHeadShot.png.png";
 import ContactSec from "./component/contactSec";
+import QnaSec from "./component/qnaSec";
 function App() {
   return (
     <div>
@@ -35,6 +36,9 @@ function App() {
         </div>
       </section>
       <ContactSec />
+      <section>
+        <QnaSec />
+      </section>
     </div>
   );
 }

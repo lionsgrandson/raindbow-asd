@@ -1,6 +1,6 @@
 {
   "name": "raindbow-asd",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-faq-component": "^1.3.4",
     "react-icons": "^5.5.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
@@ -39,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1"
   }
 }
