@@ -1,0 +1,30 @@
+.HeroSec {
+  text-align: center;
+}
+.FirstBox {
+  border-radius: 2.4rem;
+}
+
+.headshot {
+  /* margin-left: 18rem; */
+  width: 25%;
+  height: 25%;
+  /* height: 30rem; */
+}
+.FirstBox h1 {
+  font-family: Frank Ruhl Libre;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+}
+.TextHeroDiv {
+  font-size: 2.4rem;
+  text-align: right;
+  margin-right: 2rem;
+}
+.HeroDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  align-items: center;
+}

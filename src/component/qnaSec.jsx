@@ -29,17 +29,18 @@ const data = {
 };
 
 const styles = {
-  //   bgColor: "white",
-  //   titleTextColor: "blue",
-  //   rowTitleColor: "blue",
-  //   rowContentColor: "grey",
-  //   arrowColor: "red",
+  bgColor: "none",
+  titleTextColor: "red",
+  rowTitleColor: "blue",
+  rowContentColor: "grey",
+  row_Color: "red",
+  // arrowColor: "red",
 };
 
 const config = {
-  //   animate: true,
-  //   arrowIcon: "V",
-  //   tabFocus: true,
+  // animate: true,
+  // arrowIcon: "V",
+  // tabFocus: true,
 };
 
 export default function QnaSec() {
