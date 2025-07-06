@@ -15,10 +15,12 @@ function App() {
         <QnaSec />
         <RecomendSec />
       </section>
-      <button>
-        <a href="#contact">לחצו כאן להשארת פרטים</a>
-      </button>
-      <Footer />
+      <section className="FirstBox">
+        <button className="btContact">
+          <a href="#contact">לחצו כאן להשארת פרטים</a>
+        </button>
+        <Footer />
+      </section>
     </div>
   );
 }

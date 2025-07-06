@@ -8,7 +8,7 @@ function GReviews() {
 
   <h1 className="">Top Reviews</h1>;
   return (
-    <>
+    <section className="FirstBox">
       <div className="revDiv">
         <ReactGoogleReviews
           layout="carousel"
@@ -16,7 +16,7 @@ function GReviews() {
         />
         {/* TODO make her an account */}
       </div>
-    </>
+    </section>
   );
 }
 export default GReviews;

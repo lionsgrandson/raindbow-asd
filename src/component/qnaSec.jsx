@@ -45,7 +45,7 @@ const config = {
 
 export default function QnaSec() {
   return (
-    <div>
+    <div className="FirstBox">
       <Faq data={data} styles={styles} config={config} />
     </div>
   );

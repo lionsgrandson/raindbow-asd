@@ -1,9 +1,10 @@
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import logoLongTxt from "../img/Logo_with_NO_shadow_text.png";
+import "./footer.css";
 export default function Footer() {
   return (
-    <div>
+    <div className="footerSec">
       <img
         src={logoLongTxt}
         alt="on the left the slogan on the right a puzzle piece with rainbow colors"
