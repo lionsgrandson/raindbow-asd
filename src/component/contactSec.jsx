@@ -3,6 +3,8 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import "../App.css";
 import "./contactSec.css";
+import { FaLocationDot } from "react-icons/fa6";
+
 function ContactSec() {
   return (
     <section id="contact" className="FirstBox">
@@ -26,7 +28,7 @@ function ContactSec() {
         <section className="conDit">
           <div>
             <p c>קריית אונו והסביבה</p>
-            <FaPhoneAlt />
+            <FaLocationDot />
           </div>
           <div>
             <a href="tel:+972546495902">054-649-5902</a>
