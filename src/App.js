@@ -2,10 +2,9 @@ import "./App.css";
 
 import ContactSec from "./component/contactSec";
 import QnaSec from "./component/qnaSec";
-import RecomendSec from "./component/recomendationSec";
 import Footer from "./component/footer";
 import Hero from "./component/hero";
-
+import RecBox from "./component/recSec";
 function App() {
   return (
     <div className="mDiv">
@@ -13,7 +12,8 @@ function App() {
       <ContactSec />
       <section>
         <QnaSec />
-        <RecomendSec />
+        <RecBox />
+        {/* <RecomendSec /> */}
       </section>
       <section className="FirstBox">
         <button className="btContact">
