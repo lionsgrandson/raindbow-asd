@@ -1,9 +1,10 @@
 import TextField from "@mui/material/TextField";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import "../App.css";
 function ContactSec() {
   return (
-    <section id="contact">
+    <section id="contact" className="FirstBox">
       <h2>יצירת קשר</h2>
       <div>
         <form method="POST" autocomplete="on">
