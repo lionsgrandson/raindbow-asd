@@ -4,7 +4,7 @@ import logoLongTxt from "../img/Logo_with_NO_shadow_text.png";
 import "./footer.css";
 export default function Footer() {
   return (
-    <div className="footerSec">
+    <div className="footerSec FirstBox">
       <img
         src={logoLongTxt}
         alt="on the left the slogan on the right a puzzle piece with rainbow colors"

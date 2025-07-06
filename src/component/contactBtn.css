@@ -1,0 +1,16 @@
+.contactBtn {
+  width: 40rem;
+  height: 10rem;
+  border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+}
+.btContact {
+  font-family: Frank Ruhl Libre;
+  font-weight: 500;
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 1rem 4rem;
+}
