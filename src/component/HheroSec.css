@@ -1,18 +1,12 @@
 .HeroSec {
   text-align: center;
-  /* flex-wrap: wrap; */
-  /* display: flex; */
 }
 .iconHead {
   margin-top: 5rem;
 }
-/* .FirstBox {
-  border-radius: 2.4rem;
-}
- */
-.headshot {
-  margin-left: 10rem;
 
+.headshot {
+  margin: 0 auto;
   width: 40rem;
   height: 35rem;
 }
@@ -30,7 +24,8 @@
 .HeroDiv {
   display: flex;
   flex-direction: row;
-  gap: 10rem;
+  /* gap: 10rem; */
   align-items: center;
   padding-bottom: 5rem;
+  flex-wrap: wrap;
 }
