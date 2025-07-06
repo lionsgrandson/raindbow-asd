@@ -2,12 +2,16 @@ import "../App.css";
 import Icon from "../img/Logo_icon_noshadow.png";
 import sivanHeadShot from "../img/sivanHeadShot.png.png";
 import "./HheroSec.css";
-import "../App.css";
+
 function Hero() {
   return (
     <div className="HeroSec">
       <header>
-        <img src={Icon} alt="a puzzle peice with a rainbow colors"></img>
+        <img
+          src={Icon}
+          alt="a puzzle peice with a rainbow colors"
+          className="iconHead"
+        />
       </header>
       <section className="FirstBox">
         <h1>
