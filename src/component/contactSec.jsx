@@ -11,10 +11,15 @@ function ContactSec() {
       <h2 className="h1Con">יצירת קשר</h2>
       <div className="contactContent">
         <form method="POST" autocomplete="on" className="ConForm">
-          <TextField type="text" label="שם" autocomplete="on" />
-          <TextField type="phone" label="טלפון" />
-          <TextField type="email" label="מייל" />
-          <TextField type="text" label="הודעה" />
+          <TextField
+            type="text"
+            label="שם"
+            autocomplete="on"
+            className="textField"
+          />
+          <TextField type="phone" label="טלפון" className="textField" />
+          <TextField type="email" label="מייל" className="textField" />
+          <TextField type="text" label="הודעה" className="textField" />
           <TextField
             type="submit"
             onClick={(e) => {

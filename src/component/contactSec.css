@@ -12,9 +12,19 @@
   font-size: 2.4rem;
   line-height: 100%;
   display: flex;
+
   justify-content: space-evenly;
 }
-.ConForm,
+.textField {
+  /* width: 40%; */
+  text-align: center;
+}
+.ConForm {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 .conDit {
   display: flex;
   flex-direction: column;

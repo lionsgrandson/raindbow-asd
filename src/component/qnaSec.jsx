@@ -30,9 +30,9 @@ const data = {
 
 const styles = {
   bgColor: "none",
-  titleTextColor: "red",
-  rowTitleColor: "blue",
-  rowContentColor: "grey",
+  titleTextColor: "black",
+  rowTitleColor: "black",
+  rowContentColor: "black",
   row_Color: "red",
   // arrowColor: "red",
 };
