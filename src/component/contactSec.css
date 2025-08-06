@@ -21,7 +21,7 @@ input {
   font-size: 2.4rem;
   text-align: right;
   border-style: hidden hidden solid hidden;
-  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: rgba(55, 55, 55, 1);
   background: none;
 }
@@ -35,6 +35,22 @@ input {
   background: none;
   height: 17.4rem;
   font-size: 2.4rem;
+}
+.submitBTN {
+  border-radius: 8px;
+  border-color: transparent;
+  height: 5.1rem;
+  width: 38.6rem;
+  background: rgba(245, 245, 245, 0.2);
+
+  font-family: Frank Ruhl Libre;
+  font-weight: 700;
+  font-size: 2.4rem;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  text-decoration-skip-ink: auto;
+  align-self: end;
 }
 .ConForm {
   width: 25%;

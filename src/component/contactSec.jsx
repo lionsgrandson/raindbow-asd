@@ -17,32 +17,41 @@ function ContactSec() {
             id="name"
             autoComplete="name"
             className="textField"
+            required
           />
           <input
             type="phone"
-            autocomplete="phone"
+            autoComplete="phone"
             id="phone"
             placeholder="טלפון"
             className="textField"
+            required
           />
           <input
             type="email"
-            autocomplete="email"
+            autoComplete="email"
             id="email"
             placeholder="מייל"
             className="textField"
+            required
           />
-          <textarea type="text" placeholder="הודעה" className="textArea" />
-          <button
-            type="submit"
-            onClick={(e) => {
-              e.preventDefault();
-              console.log("btn clicked");
-            }}
-          >
-            Send
-          </button>
+          <textarea
+            type="text"
+            placeholder="הודעה"
+            className="textArea"
+            required
+          />
         </form>
+        <button
+          type="submit"
+          onClick={(e) => {
+            e.preventDefault();
+            console.log("btn clicked");
+          }}
+          className="submitBTN"
+        >
+          שלח
+        </button>
         <section className="conDit">
           <div>
             <p c>קריית אונו והסביבה</p>
