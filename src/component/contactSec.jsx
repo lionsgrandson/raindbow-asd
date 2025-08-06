@@ -10,17 +10,30 @@ function ContactSec() {
     <section id="contact" className="FirstBox">
       <h2 className="h1Con">יצירת קשר</h2>
       <div className="contactContent">
-        <form method="POST" autocomplete="on" className="ConForm">
-          <TextField
+        <form method="POST" className="ConForm">
+          <input
             type="text"
-            label="שם"
-            autocomplete="on"
+            placeholder="שם"
+            id="name"
+            autoComplete="name"
             className="textField"
           />
-          <TextField type="phone" label="טלפון" className="textField" />
-          <TextField type="email" label="מייל" className="textField" />
-          <TextField type="text" label="הודעה" className="textField" />
-          <TextField
+          <input
+            type="phone"
+            autocomplete="phone"
+            id="phone"
+            placeholder="טלפון"
+            className="textField"
+          />
+          <input
+            type="email"
+            autocomplete="email"
+            id="email"
+            placeholder="מייל"
+            className="textField"
+          />
+          <textarea type="text" placeholder="הודעה" className="textArea" />
+          <button
             type="submit"
             onClick={(e) => {
               e.preventDefault();
@@ -28,7 +41,7 @@ function ContactSec() {
             }}
           >
             Send
-          </TextField>
+          </button>
         </form>
         <section className="conDit">
           <div>
