@@ -30,16 +30,16 @@ const data = {
 
 const styles = {
   bgColor: "none",
-  titleTextColor: "red",
-  rowTitleColor: "blue",
+  titleTextColor: "rgba(55, 55, 55, 1)",
+  rowTitleColor: "rgba(55, 55, 55, 1)",
   rowContentColor: "grey",
-  row_Color: "red",
+  row_Color: "rgba(55, 55, 55, 1)",
   // arrowColor: "red",
 };
 
 const config = {
   // animate: true,
-  // arrowIcon: "V",
+  // arrowIcon: "+",
   // tabFocus: true,
 };
 
