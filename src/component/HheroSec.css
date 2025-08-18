@@ -14,13 +14,15 @@
   font-family: Frank Ruhl Libre;
   font-weight: 700;
   font-size: 9.6rem;
-  line-height: 100%;
 }
-.FirstBox h2 {
+.FirstBox .topHeroH2 {
   font-family: Frank Ruhl Libre;
   font-weight: 700;
   font-size: 6.4rem;
-  line-height: 100%;
+}
+.heroCTA {
+  font-weight: 700;
+  font-size: 3.6rem;
 }
 .TextHeroDiv {
   font-size: 2.4rem;
