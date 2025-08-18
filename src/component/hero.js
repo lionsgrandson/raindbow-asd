@@ -1,6 +1,6 @@
 import "../App.css";
 import Icon from "../img/Logo_icon_noshadow.png";
-import sivanHeadShot from "../img/sivanHeadShot.png.png";
+
 import heroSesh from "../img/therapySesh.png";
 import "./HheroSec.css";
 

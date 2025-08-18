@@ -4,7 +4,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import "../App.css";
 import "./contactSec.css";
 import { FaLocationDot } from "react-icons/fa6";
-
+import sivanHeadShot from "../img/sivanHeadShot.png.png";
 function ContactSec() {
   return (
     <section id="contact" className="FirstBox">
@@ -42,16 +42,20 @@ function ContactSec() {
             required
           />
         </form>
-        <button
-          type="submit"
-          onClick={(e) => {
-            e.preventDefault();
-            console.log("btn clicked");
-          }}
-          className="submitBTN"
-        >
-          שלח
-        </button>
+        <div className="midContactSec">
+          <img className="sivanHeadshotContact" src={sivanHeadShot} alt="" />
+          <button
+            type="submit"
+            onClick={(e) => {
+              e.preventDefault();
+              console.log("btn clicked");
+            }}
+            className="submitBTN"
+          >
+            שלח
+          </button>
+        </div>
+
         <section className="conDit">
           <div>
             <p c>קריית אונו והסביבה</p>
