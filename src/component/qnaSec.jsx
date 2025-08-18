@@ -21,11 +21,12 @@ export default function QnaSec() {
   const [invis, setInvis] = useState(0);
 
   function openQuestion(indexed) {
-    if (invis === 4) {
-      setInvis(indexed);
-    } else {
-      setInvis(4);
-    }
+    setInvis(indexed);
+    // if (invis === 4) {
+    //   setInvis(indexed);
+    // } else {
+    //   setInvis(4);
+    // }
     console.log(indexed);
   }
   return (
