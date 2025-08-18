@@ -1,6 +1,7 @@
 import "../App.css";
 import Icon from "../img/Logo_icon_noshadow.png";
 import sivanHeadShot from "../img/sivanHeadShot.png.png";
+import heroSesh from "../img/therapySesh.png";
 import "./HheroSec.css";
 
 function Hero() {
@@ -49,8 +50,8 @@ function Hero() {
             </h2>
           </div>
           <img
-            src={sivanHeadShot}
-            alt="headshot of Sivan the owner of the business"
+            src={heroSesh}
+            alt="animation of a thearpy sesion"
             className="headshot"
           />
         </div>
