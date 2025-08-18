@@ -1,0 +1,27 @@
+.listItemQnA {
+  padding: 2rem;
+  list-style-type: none;
+}
+.qnATitle {
+  font-family: Frank Ruhl Libre;
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+.qnAP {
+  font-family: Frank Ruhl Libre;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-break: auto;
+}
+.invis0 {
+  display: none;
+}
+.invis1 {
+  display: none;
+}
+.invis2 {
+  display: none;
+}
+.logoQnA {
+  width: 5rem;
+}

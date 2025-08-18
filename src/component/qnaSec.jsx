@@ -1,52 +1,63 @@
 import React, { useEffect, useState } from "react";
-import Faq from "react-faq-component";
+import "./qna.css";
+import logo from "../img/Logo_icon_noshadow.png";
 
-const data = {
-  title: "שאלות נפוצות",
-  rows: [
-    {
-      title: "מה השירותים שאת מציעה?",
-      content: `הרבה, לא יודע, היא לא שלחה לי עדיין טקסט`,
-    },
-    {
-      title: "קצת עלי",
-      content:
-        "אני אמא לשני ילדים על הרצף האוטיסטי, ובזכותם – אני כאן. עם ניסיון אישי עמוק, תארים אקדמיים בחינוך מיוחד (B.A ו־M.A), פסיכותרפיה קוגניטיבית־התנהגותית, אבחון דידקטי והכשרות בתחום האוטיזם (ABA), אני משלבת בין לב מקצועי ללב אנושי. במקביל, אני חוקרת פוסט-טראומה אצל הורים לילדים עם אוטיזם ומלווה משפחות – לפני ואחרי האבחון – בדרך ברורה, מותאמת ורגישה.זה לא באמת שאלה, זה לא ממש מתאים כאן, אבל בסדר",
-    },
-    {
-      title: "האם השירותים שלך מתאימים לי?",
-      content: `שוב, אין לי טקסט `,
-    },
-    {
-      title: " איפה מתקיימים המפגשים?",
-      content: "הפעם יש לי טקסט, סתם לא באמת",
-    },
-    {
-      title: "איך מתחילים?",
-      content: "הידעתם שלפתח תוכנה עם טקסט בעברית זה לא כיף",
-    },
-  ],
-};
+const items = [
+  {
+    title: "מהן התוכניות שאני מציעה?",
+    content: `ליווי אישי והדרכה של משלבות בחינוך הרגיל (שילוב יחידני).
+הדרכת הורים מותאמת להורים שבוחרים לשלב את ילדם.
+הדרכת צוותים חינוכיים לקיום שילוב יחידני מיטבי ואיכותי.
+הנחיית בוגרים ומתבגרים בתחומי שינוי ומעבר (צבא, שירות לאומי, תעסוקה, דיור ומיומנויות בין אישיות).
 
-const styles = {
-  bgColor: "none",
-  titleTextColor: "rgba(55, 55, 55, 1)",
-  rowTitleColor: "rgba(55, 55, 55, 1)",
-  rowContentColor: "grey",
-  row_Color: "rgba(55, 55, 55, 1)",
-  // arrowColor: "red",
-};
+בניית הרצאות מותאמות עבור גופים פרטים וציבוריים בנושא אוטיזם – שילוב והכלה.
 
-const config = {
-  // animate: true,
-  // arrowIcon: "+",
-  // tabFocus: true,
-};
+הדרכת מעסיקים כיצד ניתן לשלב בתחומי עבודה שונים אדם על הרצף האוטיסטי.`,
+  },
+  {
+    title: "קצת עלי",
+    content: `סיון ורונסקי, אמא לדניאל ומיכאל, שניהם נמצאים על הרצף האוטיסטי.
+בחינוך מיוחד מאוניברסיטת בר אילן.
+בחינוך מיוחד מהאוניברסיטה הפתוחה.
+הכשרה בעקרונות יסוד בהתערבות חינוכית התנהגותית לילדים על רצף האוטיזם.
+מומחית להוראה מתקנת ואסטרטגיות למידה.
+פסיכותרפיסטית קוגנטיבית התנהגותית.
+מאבחנת דידקטית מוסמכת.
+חוקרת פוסט טראומה אצל הורים לילדים עם אוטיזם.
+מתאמת שירות לבוגרים עם אוטיזם בתחומי שינוי ומעבר.
+מנחה ומלווה משפחות לפני ואחרי האבחון, צעד צעד יחד.`,
+  },
+  {
+    title: "איפה מתקיימים המפגשים?",
+    content: `הקליניקה שלי ממוקמת בקריית אונו
+*הרצאות יכולות להתקיים גם בבית הלקוח`,
+  },
+];
 
 export default function QnaSec() {
+  const [invis, setInvis] = useState(0);
+
+  function openQuestion(indexed) {
+    if (invis === 4) {
+      setInvis(indexed);
+    } else {
+      setInvis(4);
+    }
+    console.log(indexed);
+  }
   return (
     <div className="FirstBox">
-      <Faq data={data} styles={styles} config={config} />
+      <ul>
+        {items.map((item, index) => (
+          <li key={index} className="listItemQnA">
+            <button onClick={() => openQuestion(index)}>
+              <img src={logo} alt="website logo" className="logoQnA" />
+            </button>
+            <strong className="qnATitle">{item.title}</strong>
+            <p className={`qnAP`}>{index === invis ? item.content : null}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
