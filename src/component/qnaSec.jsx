@@ -50,10 +50,10 @@ export default function QnaSec() {
       <ul>
         {items.map((item, index) => (
           <li key={index} className="listItemQnA">
-            <button onClick={() => openQuestion(index)}>
+            <button onClick={() => openQuestion(index)} className="qnaBtn">
               <img src={logo} alt="website logo" className="logoQnA" />
+              <strong className="qnATitle">{item.title}</strong>
             </button>
-            <strong className="qnATitle">{item.title}</strong>
             <p className={`qnAP`}>{index === invis ? item.content : null}</p>
           </li>
         ))}
