@@ -13,7 +13,13 @@
 .FirstBox h1 {
   font-family: Frank Ruhl Libre;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 9.6rem;
+  line-height: 100%;
+}
+.FirstBox h2 {
+  font-family: Frank Ruhl Libre;
+  font-weight: 700;
+  font-size: 6.4rem;
   line-height: 100%;
 }
 .TextHeroDiv {

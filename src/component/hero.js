@@ -14,9 +14,8 @@ function Hero() {
         />
       </header>
       <section className="FirstBox">
-        <h1>
-          סיון ורונסקי - ליווי מתבגרים ובוגרים על הרצף האוטיסטי והדרכת הורים
-        </h1>
+        <h1> הנחייה אישית</h1>
+        <h2>להורים שפונים לשילוב יחידני ולמתבגרים ובוגרים על הרצף האוטיסטי</h2>
         <div className="HeroDiv">
           <div className="TextHeroDiv">
             <h2>האם פעם שאלתם את עצמכם...</h2>
