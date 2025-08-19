@@ -19,15 +19,16 @@ const items = [
 
 export default function QnaSec() {
   const [invis, setInvis] = useState(0);
+  const [isOpen, setisOpen] = useState(true);
 
   function openQuestion(indexed) {
-    setInvis(indexed);
-    // if (invis === 4) {
-    //   setInvis(indexed);
-    // } else {
-    //   setInvis(4);
-    // }
-    console.log(indexed);
+    if (invis === indexed) {
+      setisOpen(!isOpen);
+      setInvis(indexed);
+    } else {
+      setInvis(indexed);
+    }
+    console.log(isOpen);
   }
   return (
     <div className="FirstBox">
@@ -38,7 +39,7 @@ export default function QnaSec() {
               <img src={logo} alt="website logo" className="logoQnA" />
               <strong className="qnATitle">{item.title}</strong>
             </button>
-            {index === invis && (
+            {!isOpen && index === invis && (
               <p
                 className="qnAP"
                 dangerouslySetInnerHTML={{ __html: item.content }}
