@@ -14,6 +14,7 @@
   margin-top: 0;
   margin-right: 2rem;
   text-align: right;
+  margin-bottom: 0;
 }
 .RevPCon,
 .RevName {
@@ -24,7 +25,7 @@
   text-align: right;
 }
 .RevPCon {
-  padding: 2rem;
+  padding: 0 2rem;
 }
 .RevName {
   padding: 0 2rem;
