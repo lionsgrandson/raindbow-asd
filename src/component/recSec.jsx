@@ -74,7 +74,7 @@ function RecSec() {
           viewBox="-19.04 0 75.804 75.804"
           xmlns="http://www.w3.org/2000/svg"
           fill="#000000"
-          transform="rotate(180)"
+          transform="rotate(0)"
           stroke="#000000"
           stroke-width="3.7902"
         >
