@@ -1,8 +1,11 @@
 .RecSecDiv {
   display: flex;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; */
   gap: 2px;
+  height: 50rem;
+  /* width: 90%; */
+  align-items: center;
 }
 .divrecbox {
   text-align: center;
@@ -29,4 +32,11 @@
 }
 .RevName {
   padding: 0 2rem;
+}
+.nextBtn {
+  margin-left: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
 }
