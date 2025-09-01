@@ -7,33 +7,49 @@
 
 .headshot {
   margin: 0 auto;
-  width: 40rem;
-  height: 35rem;
+  /* width: 40rem;
+  height: 35rem; */
+  width: 20rem;
+  height: 20rem;
 }
 .FirstBox h1 {
   font-family: Frank Ruhl Libre;
   font-weight: 700;
   font-size: 9.6rem;
+  margin: 0;
 }
-.FirstBox .topHeroH2 {
+/* .FirstBox .topHeroH2 {
   font-family: Frank Ruhl Libre;
   font-weight: 700;
   font-size: 6.4rem;
+} */
+.FirstBox .topHeroH2 {
+  font-family: Frank Ruhl Libre;
+  font-weight: 700;
+  font-size: 4rem;
 }
 .heroCTA {
   font-weight: 700;
   font-size: 3.6rem;
 }
-.TextHeroDiv {
+.bottomDivText {
+  font-size: 2.4rem;
+  /* text-align: right; */
+}
+.HeroDiv {
   font-size: 2.4rem;
   text-align: right;
   margin-right: 2rem;
+  /* width: 40rem; */
 }
-.HeroDiv {
+.TextHeroDiv {
   display: flex;
   flex-direction: row;
-  /* gap: 10rem; */
+  gap: 10rem;
   align-items: center;
   padding-bottom: 5rem;
   flex-wrap: wrap;
+}
+.HeroSpli {
+  display: flex;
 }
