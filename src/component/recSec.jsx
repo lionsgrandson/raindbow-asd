@@ -7,24 +7,17 @@ function RecSec() {
 
   const handleNext = () => {
     setStartIndex((prev) => (prev + 2 < reviews.length ? prev + 2 : 0));
-    console.log(startIndex);
   };
   const handleNextBack = () => {
-    // setStartIndex(reviews.length);
     if (startIndex < reviews.length && startIndex > 0) {
       setStartIndex(startIndex - 1);
     } else if (startIndex === 0) {
       setStartIndex(reviews.length - 1);
     }
-    // Math.abs(
-    //   setStartIndex((prev) =>
-    //     prev < reviews.length && prev > -1 ? prev - 2 : reviews.length - 1
-    //   )
-    // );
-    // setStartIndex(startIndex * -1);
-    console.log(Math.abs(startIndex));
-    // console.log(reviews.length);
   };
+  setInterval(() => {
+    handleNextBack();
+  }, 3000);
   const reviews = [
     {
       RevText:
@@ -62,7 +55,6 @@ function RecSec() {
         "”סיון הגיעה להעביר לנו הרצאה בנושא אוטיזם לעובדים שלנו שיש להם ילדים עם אוטיזם. היא נתנה כלים פרקטיים וענתה לכל השאלות שעלו בסבלנות רבה.\n\nההורים כל כך שמחו על קיום המפגש והיכולות שלנו כחברה לתת להם מענה ולהכיר בקשיים שהם מתמודדים אגשרת עבורנו. “",
       RevName: "רכזת  רת ביטוח",
     },
-    // TODO add a small animation & style the button (maybe make it auto swtich)
   ];
 
   return (
@@ -105,7 +97,6 @@ function RecSec() {
       {reviews.slice(startIndex, startIndex + 2).map((review, index) => (
         <RecBox key={startIndex + index} {...review} />
       ))}
-
       <button onClick={handleNext} className="nextBtn">
         <svg
           width="3rem"
