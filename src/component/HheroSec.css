@@ -55,20 +55,32 @@
   gap: 2rem;
   padding-bottom: 5rem;
 }
+.TextHeroDiv ul {
+  padding-right: 1rem;
+}
 
 .HeroSpli {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  flex-wrap: wrap; /* allows wrapping when smaller */
+  flex-wrap: wrap;
   margin: 4rem 0;
 }
 
-/* ---------- Responsive ---------- */
+@media (min-width: 1600px) {
+  .FirstBox h1 {
+    font-size: 11rem;
+  }
+  .FirstBox .topHeroH2 {
+    font-size: 5.4rem;
+  }
+  .heroCTA {
+    font-size: 4.2rem;
+  }
+}
 
-/* Large desktop (≥1400px) */
-@media (min-width: 1400px) {
+@media (min-width: 1400px) and (max-width: 1599px) {
   .FirstBox h1 {
     font-size: 10rem;
   }
@@ -80,7 +92,6 @@
   }
 }
 
-/* Small laptop (≤1200px) */
 @media (max-width: 1200px) {
   .FirstBox h1 {
     font-size: 7rem;
@@ -97,7 +108,21 @@
   }
 }
 
-/* Tablets (≤900px) */
+@media (max-width: 1024px) {
+  .FirstBox h1 {
+    font-size: 6rem;
+  }
+  .FirstBox .topHeroH2 {
+    font-size: 3rem;
+  }
+  .heroCTA {
+    font-size: 2.6rem;
+  }
+  .HeroDiv {
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 900px) {
   .HeroSpli {
     flex-direction: column;
@@ -126,8 +151,25 @@
   }
 }
 
-/* Phones (≤600px) */
+@media (max-width: 768px) {
+  .HeroSec {
+    padding: 1.5rem;
+  }
+  .FirstBox h1 {
+    font-size: 4.6rem;
+  }
+  .FirstBox .topHeroH2 {
+    font-size: 2.6rem;
+  }
+  .bottomDivText {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 600px) {
+  .HeroSec {
+    padding: 1rem;
+  }
   .FirstBox h1 {
     font-size: 3.6rem;
   }
@@ -139,12 +181,52 @@
   }
   .bottomDivText {
     font-size: 1.8rem;
+    text-align: center;
   }
   .HeroDiv {
     font-size: 1.8rem;
+    margin: 1rem 0;
+    text-align: center;
   }
   .headshot {
-    width: 14rem;
-    height: 14rem;
+    display: none;
+  }
+  .TextHeroDiv {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  .HeroSec {
+    padding: 0.8rem;
+  }
+  .FirstBox h1 {
+    font-size: 3rem;
+  }
+  .FirstBox .topHeroH2 {
+    font-size: 1.8rem;
+  }
+  .heroCTA {
+    font-size: 1.8rem;
+  }
+  .HeroDiv {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .HeroSec {
+    padding: 0.5rem;
+  }
+  .FirstBox h1 {
+    font-size: 2.6rem;
+  }
+  .FirstBox .topHeroH2 {
+    font-size: 1.6rem;
+  }
+  .heroCTA {
+    font-size: 1.6rem;
+  }
+  .bottomDivText {
+    font-size: 1.5rem;
   }
 }

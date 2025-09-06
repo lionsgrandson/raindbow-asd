@@ -33,9 +33,6 @@
   margin-bottom: 2rem;
 }
 
-/* 🔽 Responsive Breakpoints */
-
-/* Large desktops (above 1600px) */
 @media (min-width: 1600px) {
   .startLogo {
     width: 6rem;
@@ -48,7 +45,6 @@
   }
 }
 
-/* Standard desktops (1200px – 1599px) */
 @media (max-width: 1599px) {
   .startLogo {
     width: 5rem;
@@ -58,7 +54,6 @@
   }
 }
 
-/* Laptops (992px – 1199px) */
 @media (max-width: 1199px) {
   .startLogo {
     width: 4.5rem;
@@ -71,7 +66,6 @@
   }
 }
 
-/* Tablets (768px – 991px) */
 @media (max-width: 991px) {
   .startLogo {
     width: 4rem;
@@ -85,7 +79,6 @@
   }
 }
 
-/* Small tablets & large phones (576px – 767px) */
 @media (max-width: 767px) {
   .startLogo {
     width: 3.5rem;
@@ -100,8 +93,6 @@
     font-size: 1.6rem;
   }
 }
-
-/* Phones (up to 575px) */
 @media (max-width: 575px) {
   .startLogo {
     width: 3rem;

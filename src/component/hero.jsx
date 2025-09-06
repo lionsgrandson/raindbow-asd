@@ -15,12 +15,12 @@ function Hero() {
         />
       </header>
       <section className='FirstBox'>
-        <h1> הנחייה אישית</h1>
+        <h1> הנחייה אישית</h1>
         <h2 className='topHeroH2'>
           להורים שפונים לשילוב יחידני ולמתבגרים ובוגרים על הרצף האוטיסטי
         </h2>
         <div className='HeroSpli'>
-          {/* this we put on the right */}
+          {/* Right side */}
           <div className='HeroDiv'>
             <div className='TextHeroDiv'>
               <ul>
@@ -35,12 +35,14 @@ function Hero() {
               </ul>
             </div>
           </div>
+
           <img
             src={heroSesh}
             alt='animation of a thearpy sesion'
             className='headshot'
           />
-          {/* this will be the middle */}
+
+          {/* Left side */}
           <div className='HeroDiv'>
             <div className='TextHeroDiv'>
               <ul>
@@ -55,8 +57,8 @@ function Hero() {
               </ul>
             </div>
           </div>
-          {/* end of the split */}
         </div>
+
         <p className='bottomDivText'>
           אני כאן בשבילכם – ללוות, להדריך ולבנות יחד מסלול מותאם אישית לילד
           שלכם, צעד אחר צעד. <br />
