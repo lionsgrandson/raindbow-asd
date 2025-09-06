@@ -7,6 +7,7 @@ export default function Footer() {
     <div className='footerSec '>
       <img
         src={logoLongTxt}
+        className='footerImg'
         alt='on the left the slogan on the right a puzzle piece with rainbow colors'
       />
       <div className='ContactFooter'>

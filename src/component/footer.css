@@ -21,11 +21,14 @@
 
 @media (max-width: 1000px) {
   .footerSec {
-    width: 100%;
+    width: initial;
     padding: 0;
   }
 }
 @media (max-width: 768px) {
+  .footerImg {
+    width: 80%;
+  }
   .footerSec {
     flex-direction: column;
     justify-content: center;
