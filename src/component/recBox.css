@@ -3,3 +3,116 @@
   margin-left: 2rem;
   margin-top: 2rem;
 }
+
+.divrecbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.StartRev {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.RevPCon {
+  font-family: Frank Ruhl Libre;
+  font-size: 2.4rem;
+  line-height: 140%;
+  margin: 2rem;
+  max-width: 80ch;
+}
+
+.RevName {
+  font-family: Frank Ruhl Libre;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* 🔽 Responsive Breakpoints */
+
+/* Large desktops (above 1600px) */
+@media (min-width: 1600px) {
+  .startLogo {
+    width: 6rem;
+  }
+  .RevPCon {
+    font-size: 2.8rem;
+  }
+  .RevName {
+    font-size: 2.4rem;
+  }
+}
+
+/* Standard desktops (1200px – 1599px) */
+@media (max-width: 1599px) {
+  .startLogo {
+    width: 5rem;
+  }
+  .RevPCon {
+    font-size: 2.4rem;
+  }
+}
+
+/* Laptops (992px – 1199px) */
+@media (max-width: 1199px) {
+  .startLogo {
+    width: 4.5rem;
+  }
+  .RevPCon {
+    font-size: 2.2rem;
+  }
+  .RevName {
+    font-size: 1.9rem;
+  }
+}
+
+/* Tablets (768px – 991px) */
+@media (max-width: 991px) {
+  .startLogo {
+    width: 4rem;
+  }
+  .RevPCon {
+    font-size: 2rem;
+    margin: 1.5rem;
+  }
+  .RevName {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small tablets & large phones (576px – 767px) */
+@media (max-width: 767px) {
+  .startLogo {
+    width: 3.5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .RevPCon {
+    font-size: 1.8rem;
+    margin: 1rem;
+  }
+  .RevName {
+    font-size: 1.6rem;
+  }
+}
+
+/* Phones (up to 575px) */
+@media (max-width: 575px) {
+  .startLogo {
+    width: 3rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .RevPCon {
+    font-size: 1.6rem;
+    margin: 0.8rem;
+  }
+  .RevName {
+    font-size: 1.4rem;
+  }
+}
