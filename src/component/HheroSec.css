@@ -1,55 +1,150 @@
 .HeroSec {
   text-align: center;
+  padding: 2rem;
 }
+
 .iconHead {
   margin-top: 5rem;
+  max-width: 10rem;
+  height: auto;
 }
 
 .headshot {
   margin: 0 auto;
-  /* width: 40rem;
-  height: 35rem; */
   width: 20rem;
   height: 20rem;
+  object-fit: cover;
 }
+
 .FirstBox h1 {
-  font-family: Frank Ruhl Libre;
+  font-family: 'Frank Ruhl Libre', serif;
   font-weight: 700;
   font-size: 9.6rem;
   margin: 0;
 }
-/* .FirstBox .topHeroH2 {
-  font-family: Frank Ruhl Libre;
-  font-weight: 700;
-  font-size: 6.4rem;
-} */
+
 .FirstBox .topHeroH2 {
-  font-family: Frank Ruhl Libre;
+  font-family: 'Frank Ruhl Libre', serif;
   font-weight: 700;
   font-size: 4rem;
+  line-height: 1.4;
 }
+
 .heroCTA {
   font-weight: 700;
   font-size: 3.6rem;
+  margin-top: 3rem;
 }
+
 .bottomDivText {
   font-size: 2.4rem;
-  /* text-align: right; */
+  margin: 3rem 0;
 }
+
 .HeroDiv {
   font-size: 2.4rem;
   text-align: right;
-  margin-right: 2rem;
-  /* width: 40rem; */
+  margin: 2rem;
+  flex: 1;
+  min-width: 25rem;
 }
+
 .TextHeroDiv {
   display: flex;
-  flex-direction: row;
-  gap: 10rem;
-  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
   padding-bottom: 5rem;
-  flex-wrap: wrap;
 }
+
 .HeroSpli {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap; /* allows wrapping when smaller */
+  margin: 4rem 0;
+}
+
+/* ---------- Responsive ---------- */
+
+/* Large desktop (≥1400px) */
+@media (min-width: 1400px) {
+  .FirstBox h1 {
+    font-size: 10rem;
+  }
+  .FirstBox .topHeroH2 {
+    font-size: 5rem;
+  }
+  .heroCTA {
+    font-size: 4rem;
+  }
+}
+
+/* Small laptop (≤1200px) */
+@media (max-width: 1200px) {
+  .FirstBox h1 {
+    font-size: 7rem;
+  }
+  .FirstBox .topHeroH2 {
+    font-size: 3.2rem;
+  }
+  .heroCTA {
+    font-size: 2.8rem;
+  }
+  .headshot {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+/* Tablets (≤900px) */
+@media (max-width: 900px) {
+  .HeroSpli {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .HeroSpli li {
+    list-style: none;
+  }
+  .HeroDiv {
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .headshot {
+    width: 16rem;
+    height: 16rem;
+  }
+  .FirstBox h1 {
+    font-size: 5rem;
+  }
+  .FirstBox .topHeroH2 {
+    font-size: 2.8rem;
+  }
+  .heroCTA {
+    font-size: 2.4rem;
+  }
+}
+
+/* Phones (≤600px) */
+@media (max-width: 600px) {
+  .FirstBox h1 {
+    font-size: 3.6rem;
+  }
+  .FirstBox .topHeroH2 {
+    font-size: 2rem;
+  }
+  .heroCTA {
+    font-size: 2rem;
+  }
+  .bottomDivText {
+    font-size: 1.8rem;
+  }
+  .HeroDiv {
+    font-size: 1.8rem;
+  }
+  .headshot {
+    width: 14rem;
+    height: 14rem;
+  }
 }
