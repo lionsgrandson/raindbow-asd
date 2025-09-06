@@ -5,54 +5,50 @@ import './recSec.css'
 
 function RecSec() {
   const [startIndex, setStartIndex] = useState(0)
+  const [itemsPerPage, setItemsPerPage] = useState(2)
 
   const reviews = [
-    {
-      RevText:
-        '”סיון מלווה אותי עוד שהתחלתי להתנדב בצבא ואפילו קצת לפני. היא עזרה לי להבין יותר את הסביבה ולענות בצורה מותאמת.\n\nלמדתי ממנה כיצד להתמודד עם ריבוי משימות ולעבוד על הלחץ שלי שלא ישפיע ויפרק לי את כל היום.\n\nהשיחה איתה עוזרת לי להבין את היחסים שלי מול המשפחה לי ומול החברים. אני יודע להתמודד עם הרבה יותר דברים היום בצורה מאוזנת. “',
-      RevName: 'בוגר בן 23',
-    },
-    {
-      RevText:
-        '”סיון הגיעה להעביר לנו הרצאה בנושא אוטיזם לעובדים שלנו שיש להם ילדים עם אוטיזם. היא נתנה כלים פרקטיים וענתה לכל השאלות שעלו בסבלנות רבה.\n\nההורים כל כך שמחו על קיום המפגש והיכולות שלנו כחברה לתת להם מענה ולהכיר בקשיים שהם מתמודדים איתם. סיון יצרה מקום בטוח במהלך ההרצאה שנתן אפשרות להיחשף ולהרגיש חלק מקהילה.\n\nמודה לה על ההרצאה המחברת והמגשרת עבורנו. “',
-      RevName: 'אנוש חברת ביטוח',
-    },
-    // דמו נוספים...
+    { RevText: '”סיון מלווה אותי עוד שהתחלתי...“', RevName: 'בוגר בן 23' },
+    { RevText: '”סיון הגיעה להעביר לנו הרצאה...“', RevName: 'אנוש חברת ביטוח' },
     {
       RevText: '”סיון הגיעה להעביר לנו הרצאה...“',
       RevName: 'רכזת משאבי ביטוח',
     },
+    { RevText: '”סיון יצרה מקום בטוח...“', RevName: 'רכזת משאבי אנוש' },
     {
-      RevText: '”סיון יצרה מקום בטוח...“',
-      RevName: 'רכזת משאבי אנוש',
-    },
-    {
-      RevText: '”סיון הגיעה להעביר לנו הרצאה.ביר לנו הרצאה...“',
+      RevText: '”סיון הגיעה להעביר לנו הרצאה...“',
       RevName: 'רכזת משאבי ביטוח',
     },
-    {
-      RevText: '”סיון יצרה מקום בטוח...“',
-      RevName: 'רכזת משאבי אנוש',
-    },
+    { RevText: '”סיון יצרה מקום בטוח...“', RevName: 'רכזת משאבי אנוש' },
   ]
 
-  // ⏩ Go forward
-  const handleNext = () => {
-    setStartIndex((prev) => (prev + 2 < reviews.length ? prev + 2 : 0))
-  }
+  useEffect(() => {
+    const updateItems = () => {
+      setItemsPerPage(window.innerWidth <= 1000 ? 1 : 2)
+    }
+    updateItems()
+    window.addEventListener('resize', updateItems)
+    return () => window.removeEventListener('resize', updateItems)
+  }, [])
 
-  // ⏪ Go back
-  const handlePrev = () => {
+  const handleNext = () => {
     setStartIndex((prev) =>
-      prev - 2 >= 0 ? prev - 2 : Math.max(0, reviews.length - 2)
+      prev + itemsPerPage < reviews.length ? prev + itemsPerPage : 0
     )
   }
 
-  // 🎬 Auto-slide forward every 3s
+  const handlePrev = () => {
+    setStartIndex((prev) =>
+      prev - itemsPerPage >= 0
+        ? prev - itemsPerPage
+        : Math.max(0, reviews.length - itemsPerPage)
+    )
+  }
+
   useEffect(() => {
     const interval = setInterval(handleNext, 3000)
-    return () => clearInterval(interval) // cleanup
-  }, [reviews.length])
+    return () => clearInterval(interval)
+  }, [itemsPerPage, reviews.length])
 
   return (
     <div className='RecSecDiv'>
@@ -60,9 +56,11 @@ function RecSec() {
         ▶
       </button>
 
-      {reviews.slice(startIndex, startIndex + 2).map((review, index) => (
-        <RecBox key={startIndex + index} {...review} />
-      ))}
+      {reviews
+        .slice(startIndex, startIndex + itemsPerPage)
+        .map((review, index) => (
+          <RecBox key={startIndex + index} {...review} />
+        ))}
 
       <button onClick={handleNext} className='nextBtn'>
         ◀

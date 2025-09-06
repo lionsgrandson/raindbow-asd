@@ -3,13 +3,14 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap; /* ✅ allows wrapping on small screens */
+  flex-wrap: wrap;
   padding: 2rem;
-  min-height: 50rem;
+  /* min-height: fit-content; */
+  /* min-height: 50rem; */
 }
 
 .divrecbox {
-  flex: 1 1 40rem; /* ✅ flexible width */
+  flex: 1 1;
   max-width: 50rem;
   text-align: center;
 }
@@ -54,13 +55,11 @@
   background-color: #f0f0f0;
 }
 
-/* 🔽 Responsive Breakpoints */
-
-/* Tablets */
 @media (max-width: 991px) {
   .RecSecDiv {
-    flex-direction: column;
-    gap: 1.5rem;
+    flex-direction: row;
+    gap: 0;
+    padding: 0 0.5rem;
   }
   .divrecbox {
     max-width: 90%;
@@ -70,8 +69,10 @@
   }
 }
 
-/* Phones */
 @media (max-width: 575px) {
+  .divrecbox {
+    max-width: 95%;
+  }
   .RevPCon {
     font-size: 1.6rem;
   }
