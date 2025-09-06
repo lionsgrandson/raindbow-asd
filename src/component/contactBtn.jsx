@@ -1,12 +1,12 @@
-import "../App.css";
-import "./contactBtn.css";
-function ContactBtn() {
+import '../App.css'
+import './contactBtn.css'
+
+function ContactBtn({ text = 'לחצו כאן להשארת פרטים', href = '#contact' }) {
   return (
-    <a href="#contact">
-      <section className="FirstBox contactBtn">
-        <p className="btContact">לחצו כאן להשארת פרטים</p>
-      </section>
+    <a href={href} className='contactBtn'>
+      <p className='btContact'>{text}</p>
     </a>
-  );
+  )
 }
-export default ContactBtn;
+
+export default ContactBtn
