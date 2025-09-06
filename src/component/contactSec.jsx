@@ -5,6 +5,7 @@ import '../App.css'
 import './contactSec.css'
 import { FaLocationDot } from 'react-icons/fa6'
 import sivanHeadShot from '../img/sivanHeadShot.png.png'
+
 function ContactSec() {
   return (
     <section id='contact' className='FirstBox'>
@@ -62,7 +63,7 @@ function ContactSec() {
 
         <section className='conDit'>
           <div>
-            <p c>קריית אונו והסביבה</p>
+            <p>קריית אונו והסביבה</p>
             <FaLocationDot />
           </div>
           <div>
@@ -70,7 +71,7 @@ function ContactSec() {
             <FaPhoneAlt />
           </div>
           <div>
-            <a href='mail:LEVANONSKI@GMAIL.COM'>levanonski@gmail.com</a>
+            <a href='mailto:LEVANONSKI@GMAIL.COM'>levanonski@gmail.com</a>
             <MdEmail />
           </div>
         </section>
@@ -78,4 +79,5 @@ function ContactSec() {
     </section>
   )
 }
+
 export default ContactSec

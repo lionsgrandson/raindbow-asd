@@ -4,17 +4,19 @@
   font-size: 6.4rem;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
   color: rgba(55, 55, 55, 1);
 }
+
 .contactContent {
   font-family: Frank Ruhl Libre;
   font-weight: 400;
   font-size: 2.4rem;
   line-height: 100%;
   display: flex;
-
   justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap; /* ensures wrapping on smaller screens */
 }
 
 input {
@@ -24,7 +26,11 @@ input {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: rgba(55, 55, 55, 1);
   background: none;
+  border: 1px solid rgba(55, 55, 55, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
 }
+
 .textArea {
   border-width: 1px;
   border-top-left-radius: 18px;
@@ -35,47 +41,173 @@ input {
   background: none;
   height: 17.4rem;
   font-size: 2.4rem;
+  padding: 1rem;
 }
+
 .submitBTN {
   border-radius: 8px;
   border-color: transparent;
   width: 40rem;
   background: rgba(245, 245, 245, 0.2);
-
   font-family: Frank Ruhl Libre;
   font-weight: 700;
   font-size: 4.8rem;
   align-self: end;
+  cursor: pointer;
 }
+
 .ConForm {
   width: 25%;
+  min-width: 28rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 5rem;
 }
+
 .conDit {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 2rem;
 }
+
 .conDit p {
   display: inline;
 }
+
 .conDit div {
   display: flex;
   gap: 2rem;
   align-items: center;
+  font-size: 2rem;
 }
+
 .sivanHeadshotContact {
   display: block;
   width: 22.4rem;
   border-radius: 50%;
 }
+
 .midContactSec {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 2rem;
+}
+
+/* ----------------- Responsive ----------------- */
+
+/* Very large screens (≥1600px) */
+@media (min-width: 1600px) {
+  .h1Con {
+    font-size: 7.2rem;
+  }
+  .submitBTN {
+    font-size: 5.2rem;
+    width: 45rem;
+  }
+}
+
+/* Desktops (≤1400px) */
+@media (max-width: 1400px) {
+  .h1Con {
+    font-size: 6rem;
+  }
+  .submitBTN {
+    font-size: 4.4rem;
+    width: 38rem;
+  }
+}
+
+/* Small laptops (≤1200px) */
+@media (max-width: 1200px) {
+  .h1Con {
+    font-size: 5.2rem;
+  }
+  .ConForm {
+    width: 35%;
+  }
+  .submitBTN {
+    font-size: 3.8rem;
+    width: 32rem;
+  }
+  .sivanHeadshotContact {
+    width: 20rem;
+  }
+}
+
+/* Tablets landscape (≤992px) */
+@media (max-width: 992px) {
+  .contactContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ConForm {
+    width: 60%;
+  }
+  .submitBTN {
+    width: 28rem;
+    font-size: 3.2rem;
+  }
+}
+
+/* Tablets portrait (≤768px) */
+@media (max-width: 768px) {
+  .h1Con {
+    font-size: 4.4rem;
+  }
+  input,
+  .textArea {
+    font-size: 2rem;
+  }
+  .ConForm {
+    width: 80%;
+  }
+  .sivanHeadshotContact {
+    width: 18rem;
+  }
+  .submitBTN {
+    width: 24rem;
+    font-size: 2.8rem;
+  }
+}
+
+/* Large phones (≤576px) */
+@media (max-width: 576px) {
+  .h1Con {
+    font-size: 3.6rem;
+  }
+  .ConForm {
+    width: 90%;
+  }
+  .submitBTN {
+    width: 22rem;
+    font-size: 2.4rem;
+  }
+  .sivanHeadshotContact {
+    width: 16rem;
+  }
+  .conDit div {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small phones (≤400px) */
+@media (max-width: 400px) {
+  .h1Con {
+    font-size: 3rem;
+  }
+  .submitBTN {
+    width: 18rem;
+    font-size: 2rem;
+  }
+  .sivanHeadshotContact {
+    width: 14rem;
+  }
+  input,
+  .textArea {
+    font-size: 1.6rem;
+  }
 }
