@@ -6,7 +6,13 @@
   border-radius: 2.4rem;
 }
 body {
-  background-image: linear-gradient(55deg, purple, #87ceeb, green);
+  background-image: linear-gradient(
+    45deg,
+    #9900ffdb,
+    #beffab,
+    #ff91a9,
+    #abff5d9e
+  );
   /* background-image: linear-gradient(45deg, #87ceeb, #819cd9, #87ceeb, #b19cd9); */
   background-size: 200% 200%;
   animation: gradientShift 3s ease infinite;
