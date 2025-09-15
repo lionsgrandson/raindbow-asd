@@ -1,28 +1,28 @@
-import '../App.css'
-import Icon from '../img/Logo_icon_noshadow.png'
+import "../App.css";
+import Icon from "../img/Logo_icon_noshadow.png";
 
-import heroSesh from '../img/therapySesh.png'
-import './HheroSec.css'
+import heroSesh from "../img/therapySesh.png";
+import "./HheroSec.css";
 
 function Hero() {
   return (
-    <div className='HeroSec'>
+    <div className="HeroSec">
       <header>
         <img
           src={Icon}
-          alt='a puzzle peice with a rainbow colors'
-          className='iconHead'
+          alt="a puzzle peice with a rainbow colors"
+          className="iconHead"
         />
       </header>
-      <section className='FirstBox'>
+      <section className="FirstBox">
         <h1> הנחייה אישית</h1>
-        <h2 className='topHeroH2'>
+        <h2 className="topHeroH2">
           להורים שפונים לשילוב יחידני ולמתבגרים ובוגרים על הרצף האוטיסטי
         </h2>
-        <div className='HeroSpli'>
+        <div className="HeroSpli">
           {/* Right side */}
-          <div className='HeroDiv'>
-            <div className='TextHeroDiv'>
+          <div className="HeroDiv">
+            <div className="TextHeroDiv">
               <ul>
                 <li>איך אדע אם מתאים לילד/ה שילוב יחידני בכיתה רגילה?</li>
                 <li>
@@ -38,13 +38,13 @@ function Hero() {
 
           <img
             src={heroSesh}
-            alt='animation of a thearpy sesion'
-            className='headshot'
+            alt="animation of a thearpy sesion"
+            className="headshot"
           />
 
           {/* Left side */}
-          <div className='HeroDiv'>
-            <div className='TextHeroDiv'>
+          <div className="HeroDiv">
+            <div className="TextHeroDiv">
               <ul>
                 <li>
                   האם מתאים לבן/בת שלי שירות צבאי, לאומי אולי בכלל מסגרת אחרת?
@@ -59,17 +59,17 @@ function Hero() {
           </div>
         </div>
 
-        <p className='bottomDivText'>
+        <p className="bottomDivText">
           אני כאן בשבילכם – ללוות, להדריך ולבנות יחד מסלול מותאם אישית לילד
           שלכם, צעד אחר צעד. <br />
           <br />
           ליווי אישי למתבגרים ובוגרים עם אוטיזם, סדנאות להורים, וייעוץ מקצועי
           מבוסס ניסיון אישי, קליני ואקדמי.
         </p>
-        <h2 className='heroCTA'>מלאו פרטים בטופס ואחזור אליכם לשיחת היכרות</h2>
+        <h2 className="heroCTA">מלאו פרטים בטופס ואחזור אליכם לשיחת היכרות</h2>
       </section>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

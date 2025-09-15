@@ -6,10 +6,10 @@
   border-radius: 2.4rem;
 }
 body {
-  /* background-image: linear-gradient(#88bffd, #88c0e3); */
-  background-image: linear-gradient(45deg, #87ceeb, #819cd9, #87ceeb, #b19cd9);
+  background-image: linear-gradient(55deg, purple, #87ceeb, green);
+  /* background-image: linear-gradient(45deg, #87ceeb, #819cd9, #87ceeb, #b19cd9); */
   background-size: 200% 200%;
-  animation: gradientShift 6s ease infinite;
+  animation: gradientShift 3s ease infinite;
 }
 @keyframes gradientShift {
   0% {
